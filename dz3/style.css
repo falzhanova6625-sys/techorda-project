@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Секция */
+.card-section {
+    padding: 20px;
+}
+
+/* Карточка */
+.card {
+    background-color: white;
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Картинка */
+.card-image {
+    width: 100%;
+    display: block;
+}
+
+/* Контент */
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Кнопка */
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    background-color: #45a049;
+}
