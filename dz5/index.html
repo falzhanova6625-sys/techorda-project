@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фариза Альжанова | Frontend Developer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f0f8;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #fdf4ff, #ede9fe);
+    padding: 120px 20px 160px;
+    border-radius: 0 0 80px 80px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 35px;
+    max-width: 450px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #d946ef, #9333ea);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(147, 51, 234, 0.3);
+}
+
+/* PHOTO */
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 340px;
+    height: 460px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 30px;
+    box-shadow: 0 40px 80px rgba(147, 51, 234, 0.25);
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: linear-gradient(135deg, #f0abfc, #c084fc);
+    border-radius: 50%;
+    top: -40px;
+    right: 20px;
+    z-index: 1;
+    filter: blur(60px);
+    opacity: 0.5;
+}
+
+/* SECTIONS */
+
+.section {
+    max-width: 1100px;
+    margin: -80px auto 80px;
+    background: white;
+    padding: 80px 60px;
+    border-radius: 40px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fafafa;
+    padding: 35px;
+    border-radius: 25px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(147, 51, 234, 0.15);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 60px 30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Фариза Альжанова</h1>
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h2>Frontend Developer</h2>
+            <p>Создаю современные адаптивные сайты и лендинги для бизнеса и личных брендов.</p>
+            <a href="#contact" class="btn">Заказать сайт</a>
+        </div>
+
+        <div class="hero-image">
+            <!-- ВАЖНО: укажи правильный путь к фото -->
+            <img src="images/photo.jpg" alt="Фариза">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>Обо мне</h2>
+    <p style="max-width:700px; margin:0 auto; text-align:center;">
+        Я начинающий frontend-разработчик. Работаю с HTML, CSS, Bootstrap и Tailwind.
+        Создаю аккуратные, современные и адаптивные сайты.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h2>Услуги</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Лендинг под ключ</h3>
+            <p>От идеи до готового сайта.</p>
+        </div>
+        <div class="card">
+            <h3>Верстка по макету</h3>
+            <p>Figma → HTML/CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Адаптивная верстка</h3>
+            <p>Корректное отображение на всех устройствах.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Проекты</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Учебный проект с адаптивом.</p>
+        </div>
+        <div class="card">
+            <h3>Карточка профиля</h3>
+            <p>Flexbox и CSS.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Связаться со мной</h2>
+    <p>Email: fariza@email.com</p>
+    <p>Telegram: @fariza</p>
+    <p>GitHub: github.com/fariza</p>
+    <br>
+    <a href="#" class="btn">Написать мне</a>
+</section>
+
+<footer>
+    © 2026 Фариза Альжанова
+</footer>
+
+</body>
+</html>
+
